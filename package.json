@@ -16,6 +16,7 @@
     "@babel/polyfill": "^7.12.1",
     "@modules/faq": "file:./modules/faq",
     "@modules/privacy-policy-webview": "file:./modules/privacy-policy-webview/",
+    "@modules/terms-and-conditions-webview": "file:./modules/terms-and-conditions-webview/",
     "@react-native-masked-view/masked-view": "^0.2.9",
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/stack": "^6.3.16",
