@@ -29,17 +29,17 @@ const ScreenComponent = () => {
     console.log(`Permission given to user with id: ${id}`);
   };
 
-  return <SafeAreaView style={_styles.nivZYNXf}>
+  return <SafeAreaView style={_styles.KoehcFuq}>
       <View>
-        <TextInput style={_styles.UOSHxUEi} onChangeText={text => setSearch(text)} value={search} placeholder="Search" />
+        <TextInput style={_styles.SMNffxok} onChangeText={text => setSearch(text)} value={search} placeholder="Search" />
         <Button title="Search" onPress={handleSearch} />
         <FlatList data={dummyData} keyExtractor={item => item.id} renderItem={({
         item
-      }) => <View style={_styles.atbvhvPU}>
+      }) => <View style={_styles.xkZfmBrc}>
               <Image source={{
           uri: item.image
-        }} style={_styles.kIRsVQDi} />
-              <View style={_styles.pdfohuoq}>
+        }} style={_styles.ajeOoasJ} />
+              <View style={_styles.lNEPyWAK}>
                 <Text>{item.name}</Text>
                 <Text>{item.email}</Text>
               </View>
@@ -47,15 +47,15 @@ const ScreenComponent = () => {
             </View>} />
       </View>
       <View>
-        <TextInput style={_styles.krfZvhHL} onChangeText={text => setSearch(text)} value={search} placeholder="Search" />
+        <TextInput style={_styles.IQSDCsPA} onChangeText={text => setSearch(text)} value={search} placeholder="Search" />
         <Button title="Search" onPress={handleSearch} />
         <FlatList data={results} keyExtractor={item => item.id} renderItem={({
         item
-      }) => <View style={_styles.ShwbPsjA}>
+      }) => <View style={_styles.XrVuJilV}>
               <Image source={{
           uri: item.image
-        }} style={_styles.jXLLtmDG} />
-              <View style={_styles.ubzNvKRB}>
+        }} style={_styles.UMiGASJA} />
+              <View style={_styles.wsTsHNZO}>
                 <Text>{item.name}</Text>
                 <Text>{item.email}</Text>
               </View>
@@ -68,46 +68,46 @@ const ScreenComponent = () => {
 export default ScreenComponent;
 
 const _styles = StyleSheet.create({
-  nivZYNXf: {
+  KoehcFuq: {
     flex: 1,
     padding: 20
   },
-  UOSHxUEi: {
+  SMNffxok: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1,
     marginBottom: 20
   },
-  atbvhvPU: {
+  xkZfmBrc: {
     flexDirection: "row",
     alignItems: "center",
     marginBottom: 20
   },
-  kIRsVQDi: {
+  ajeOoasJ: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  pdfohuoq: {
+  lNEPyWAK: {
     marginLeft: 10
   },
-  krfZvhHL: {
+  IQSDCsPA: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1,
     marginBottom: 20
   },
-  ShwbPsjA: {
+  XrVuJilV: {
     flexDirection: "row",
     alignItems: "center",
     marginBottom: 20
   },
-  jXLLtmDG: {
+  UMiGASJA: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  ubzNvKRB: {
+  wsTsHNZO: {
     marginLeft: 10
   }
 });
